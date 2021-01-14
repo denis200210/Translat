@@ -5,7 +5,7 @@
 using namespace std;
 
 int main() {
-
+setlocale(LC_ALL, "Russian");
     cout <<"Input text (а..я): ";// вводим текст
     cin.getline(str,500);// считываем строку
     cout << "Output: ";
