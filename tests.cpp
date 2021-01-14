@@ -11,11 +11,11 @@ TEST(out, output) {
     trans(str, angl, rus);
     EXPECT_EQ(testing::internal::GetCapturedStdout(), "Denis");
 
-    const char* str_1 = "Я сделала это";
+    const char* str_1 = "Я это сделал";
 
     testing::internal::CaptureStdout();
     trans(str_1, angl, rus);
-    EXPECT_EQ(testing::internal::GetCapturedStdout(), "Ya sdelala eto");
+    EXPECT_EQ(testing::internal::GetCapturedStdout(), "Ya eto sdelal");
 
     const char* str_2 = "Съешь этих мягких французских булок и выпей чаю";
 
